@@ -13,7 +13,7 @@ function send_req(url)
 	return tab
 end
 function is_ch(uid)
-local ch = '@MaXTeamCh'
+local ch = '@RobotZedSpamTeam'
 	local send = send_api.."/getChatMember?chat_id="..ch..'&user_id='..uid
 	return send_req(send)
 end
