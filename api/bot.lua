@@ -32,7 +32,7 @@ function bot_run()
 	end
 	plugins = {}
 	bot = bot.result
-	local runlog = bot.first_name.." [@"..bot.username.."]\اجرا شد در زمان: "..os.date("%F - %H:%M:%S")
+	local runlog = bot.first_name.." [@"..bot.username.."]\nاجرا شد در زمان: "..os.date("%F - %H:%M:%S")
 	print(runlog)
 	send_msg(config.bot_owner, runlog)
 	
