@@ -80,7 +80,7 @@ end
 table.insert(key,{'بازگشت به منوی اصلی'})
 return send_key(msg.from.id, 'لطفا توکن گروه خود را به من ارسال کنید تا به گروه شما متصل بشم\n`اگه گروه شما توکن ندارد از پشتیانی درخواست توکن کنید`', key, true)
        elseif msg.text:lower() == 'گروه رایگان' and to == 'main' then
-    local link = '[https://t.me/NfsHelperBot?start='..msg.from.id..']'
+    local link = '[https://t.me/HelperSecurityrbot?start='..msg.from.id..']'
 return send_key(msg.from.id, [[لینک کاربری شما
 برای دریافت گروه رایگان ویژه و متصل به پنل کاربری
 لطفا لینک زیر را در گروه های خود پخش کنید 
@@ -108,12 +108,12 @@ return send_key(msg.from.id, [[برای خرید گروه سه ماهه روی �
 elseif msg.text:lower() == 'گروه ناحدود 15000 هزار تومن' and to == 'main' then
 return send_key(msg.from.id, [[برای خرید گروه نامحدود روی لینک زیر کلیک کنید و پس از پرداخت لینک گروه خود را بفرستید]] , back, true)
 elseif msg.text:lower() == 'زیر مجموعه' and to == 'main' then
-    local link = '[https://t.me/NfsHelperBot?start='..msg.from.id..']'
+    local link = '[https://t.me/HelperSecurityrbott?start='..msg.from.id..']'
     local users = tonumber(db:get('point:'..msg.chat.id))
 return send_key(msg.from.id, [[تعداد زیر مجموعه های شما هم اکنون
 ]]..' '..users..[[ می باشد
 برای دریافت گروه شما نیاز به 50 نفر عضو دارید
-تعداد باقی مانده ]]..(50-users)..' \nلینک شما\n'..link..'\n*Power by Botnex*' , mkey, true)
+تعداد باقی مانده ]]..(50-users)..' \nلینک شما\n'..link..'\n*Power by @MohammadhasanMrad*' , mkey, true)
 elseif to == 'active_group' then
     local data = load_data("data/config.lua")
 if not data.token[msg.text] then
