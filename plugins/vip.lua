@@ -91,7 +91,7 @@ if matches[1] == 'vid' and matches[2] then
 local url , res = http.request('http://www.omdbapi.com/?t='..matches[2])
 if res ~= 200 then return "No connection" end
 local jdat = json:decode(url)
-local text = 'Title : '..jdat.Title..'\nYear : '..jdat.Year..'\nRuntime : '..jdat.Runtime..'\nGenre : '..jdat.Genre..'\nLanguage : '..jdat.Language..'\n\n@MaXTeamCh'
+local text = 'Title : '..jdat.Title..'\nYear : '..jdat.Year..'\nRuntime : '..jdat.Runtime..'\nGenre : '..jdat.Genre..'\nLanguage : '..jdat.Language..'\n\n@RobotZedSpam'
 local stick = jdat.Poster
 local file = download_to_file(stick,'vid.webp')
 td.sendDocument(get_receiver(msg), 0, 0, 1, nil, file)
@@ -329,7 +329,7 @@ end
           redis:set(hash, true)
           end
   url = "https://codeload.github.com/"..matches[2]..'/'..matches[3].."/zip/master"
- 	 file = download_to_file(url,matches[2]..'|@MaxTeamCh.zip')
+ 	 file = download_to_file(url,matches[2]..'|@RobotZedSpam.zip')
 	td.sendDocument(get_receiver(msg), 0, 0, 1, nil, file)
 end 
 		-------------Converter   -------------
