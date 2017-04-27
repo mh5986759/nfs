@@ -16,7 +16,7 @@ lua cr.lua
  function logo_play() {
     declare -A txtlogo
     seconds="0.10"
-    txtlogo[1]="NFS bot has bin RUNING"
+    txtlogo[1]="Security bot has bin RUNING"
     txtlogo[5]="runing bot $2"
     txtlogo[2]="1"
     txtlogo[3]="2"
@@ -65,11 +65,11 @@ COUNTER=1
 logo_play
    while(true) do
    screen ./tg -s ./bot/bot.lua
-   curl "https://api.telegram.org/bot$token/sendmessage" -F "chat_id=-1001110522415" -F "text=#NFS-crashing
+   curl "https://api.telegram.org/bot$token/sendmessage" -F "chat_id=-1001092082860" -F "text=#Security-crashing
    runing ${COUNTER} times"
  let COUNTER=COUNTER+1 
  done 
-  curl "https://api.telegram.org/bot$token/sendmessage" -F "chat_id=-1001110522415" -F "text=#NFS-crashing
+  curl "https://api.telegram.org/bot$token/sendmessage" -F "chat_id=-1001092082860" -F "text=#Security-crashing
   #bot dwon :("
    exit
    elif [[ $1 == "-api" ]]; then
