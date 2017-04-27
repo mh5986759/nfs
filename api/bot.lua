@@ -32,7 +32,7 @@ function bot_run()
 	end
 	plugins = {}
 	bot = bot.result
-	local runlog = bot.first_name.." [@"..bot.username.."]\nis run in: "..os.date("%F - %H:%M:%S")
+	local runlog = bot.first_name.." [@"..bot.username.."]\اجرا شد در زمان: "..os.date("%F - %H:%M:%S")
 	print(runlog)
 	send_msg(config.bot_owner, runlog)
 	
@@ -54,7 +54,7 @@ function bot_run()
 end
 
 function is_ch(uid)
-local ch = '@botnexbot'
+local ch = '@RobotZedSpamTeam'
 	local send = send_api.."/getChatMember?chat_id="..ch..'&user_id='..uid
 	return send_req(send)
 end
