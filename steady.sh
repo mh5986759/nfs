@@ -32,9 +32,9 @@ done
 bld=$'\e[1m'
 rst=$'\e[0m'
 
-echo -e "\e[100m                                 Steady -- script                                 \e[00;37;40m"
-echo -e "\e[100m                                 Writed by behrad                                 \e[00;37;40m"
-echo -e "\e[01;34m                                  For Max source                                  \e[00;37;40m"
+echo -e "\e[100m                                 اسکریپ اجرا شد                                 \e[00;37;40m"
+echo -e "\e[100m                                 طراحی شده توسط محمد                                 \e[00;37;40m"
+echo -e "\e[01;34m                                  ربات سکوریتی صاحب امتیاز : فرزاد                                  \e[00;37;40m"
 echo ""
 
 sleep 1
